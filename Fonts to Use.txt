@@ -1,0 +1,9 @@
+IBM Plex Serif
+Source Sans Pro
+Slabo 27px
+Merriweather
+Playfair Display
+
+IBM Plex Serif
+==========
+Open Sans

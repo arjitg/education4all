@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+    <link href="Bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+  </head>
+	
+	
+<body>
+	
+<div style="height: 90%;">
+		  <nav class="navbar navbar-expand-md bg-transparent" style="position: absolute; z-index: 1; width: 100%;">
+		<a href="Homepage.html"><img src="icons/Pencil Logo [Updated].png" style="width:160px;" alt="Our Logo"></a>
+
+       <div class="collapse navbar-collapse align-content-sm-end offset-xl-6 offset-ms-3 offset-sm-1" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+                <a class="nav-link" href="Homepage.html">Home <span class="sr-only">(current)</span></a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="Our Partners.html">Our Partners</a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+             </li>			  
+		     <li class="nav-item">
+                <a class="nav-link" href="Gallery.html">Gallery</a>
+             </li>
+          </ul>
+             <a href="Homepage.html#contact"><button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Support!</button></a>
+       </div>
+</nav>
+		  
+	  <img class="img-fluid" alt="Placeholder" src="Illustrations/Placeholder.png" style="position:relative; pointer-events: none"/>
+	  </div>
+	
+	
+<br>
+<h1 class="display-340 text-center" style="font-family: 'Merriweather', serif;">What have we been up to?</h1>
+<br>
+	  
+<div class="container-fluid">	
+<div class="row" style="width: 100%;">
+	
+  	  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <div class="content-overlay"></div>
+      <img class="content-image img-fluid" src="Gallery/Home Centre/4.jpg" alt="Home Centre">
+      <div class="content-details fadeIn-bottom" alt=" ">
+        <h3 class="content-title">Home Centre</h3>
+        <p class="content-text"><a href="Gallery/Gift of Cow/Home Centre.html">» See pictures!</a></p>
+      </div>
+  </div>
+</div>  
+	  	  
+	  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <div class="content-overlay"></div>
+      <img class="content-image img-fluid" src="Gallery/GEMS SSA/6.jpg" alt="GEMS SSA">
+      <div class="content-details fadeIn-bottom" alt=" ">
+        <h3 class="content-title">GEMS SSA</h3>
+        <p class="content-text"><a href="Gallery/Gift of Cow/GEMS SSA.html">» See pictures!</a></p>
+      </div>
+  </div>
+</div>
+	 
+	  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <div class="content-overlay"></div>
+      <img class="content-image img-fluid" src="Gallery/Friends of India Clothes Collection/6.jpg" alt="Friends of India">
+      <div class="content-details fadeIn-bottom" alt=" ">
+        <h3 class="content-title">Friends of India</h3>
+        <p class="content-text"><a href="Gallery/Gift of Cow/Friends of India.html">» See pictures!</a></p>
+      </div>
+  </div>
+</div>
+
+	  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <div class="content-overlay"></div>
+      <img class="content-image img-fluid" src="Gallery/Nesakarangal/3.jpg" alt="Nesakarangal">
+      <div class="content-details fadeIn-bottom" alt=" ">
+        <h3 class="content-title">Nesakarangal</h3>
+        <p class="content-text"><a href="Gallery/Gift of Cow/Nesakarangal.html">» See pictures!</a></p>
+      </div>
+  </div>
+</div>  
+	
+</div>	
+	  
+<br>	  
+
+<div class="row" style="width: 100%;">
+		  
+	  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <div class="content-overlay"></div>
+      <img class="content-image img-fluid" src="Gallery/Sulabha School Blanket Distribution/19.jpg" alt="Sulabha Blanket Distribution">
+      <div class="content-details fadeIn-bottom" alt=" ">
+        <h3 class="content-title">Sulabha Blanket Distribution</h3>
+        <p class="content-text"><a href="Gallery/Gift of Cow/Sulabha Blanket Distribution.html">» See pictures!</a></p>
+      </div>
+  </div>
+</div>  
+		  
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <div class="content-overlay"></div>
+      <img class="content-image img-fluid" src="Gallery/Shravasta/5.jpg" alt="Shravasti">
+      <div class="content-details fadeIn-bottom" alt=" ">
+        <h3 class="content-title">Shravasti</h3>
+        <p class="content-text"><a href="Gallery/Gift of Cow/Shravasti.html">» See pictures!</a></p>
+      </div>
+  </div>
+</div>  
+	
+	<div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="Gallery/Shravasta/8.jpg" alt="Shravasti Yuva Seva Bhavi Sanstha, Mumbai">
+			  <br><center><button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Shravasti</button></center>
+          </a>
+        </div>
+		  
+	  <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="Gallery/Shikshyatan Educational Tour/21.jpg"	 alt="Shikshyatan Education Tour">
+			  <br><center><button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Shikshyatan Educational Tour</button></center>
+          </a>
+        </div>	
+		  
+	  <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="Gallery/Visit to Shikshyatan/1.jpg" alt="Visit to Shikshyatan">
+			  <br><center><button class="btn btn-outline-info my-2 my-sm-0" type="submit">Visit to Shikshyatan</button></center>
+          </a>
+        </div>
+		  
+</div>
+	  
+<br>
+	
+<div class="row" style="width: 100%;">
+		  
+	  <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="Gallery/Samarpan/1.jpg" alt="Samarpan">
+			  <br><center><button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Samarpan</button></center>
+          </a>
+        </div>
+		  
+	  <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="Gallery/Visit to Shikshyatan (July 2012)/2.jpg" alt="We visited Shikshyatan in July 2012">
+			  <br><center><button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Visit to Shikshyatan (July 2012)</button></center>
+          </a>
+        </div>
+		  
+	  <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="Gallery/Visit to Shikshyatan (2014)/8.jpg" alt="Shikshyatan Visit 2014">
+			  <br><center><button class="btn btn-outline-success my-2 my-sm-0" type="submit">Shikshyatan Tour - 2014</button></center>
+          </a>
+        </div>	
+		  
+	  <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="Gallery/Independence Day 2011/hoisting.jpg" alt="Shikshyatan - Independence Day Visit">
+			  <br><center><button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Shikshyatan - Independence Day Visit</button></center>
+          </a>
+        </div>
+		  
+</div>
+	
+	<div class="row" style="width: 100%;">
+	  
+		
+	  			  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <div class="content-overlay"></div>
+      <img class="content-image img-fluid" src="Gallery/Udupi Chatralaya/2.jpg" alt="Udupi Chatralaya">
+      <div class="content-details fadeIn-bottom" alt=" ">
+        <h3 class="content-title">Udupi Chatralaya</h3>
+        <p class="content-text"><a href="Gallery/Gift of Cow/Udupi Chatralaya.html">» See pictures!</a></p>
+      </div>
+  </div>
+</div>
+		  
+	  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="Gallery/Gift of Cow/5.jpg" alt="Gift of Cow">
+      <div class="content-details fadeIn-bottom" alt=" ">
+        <h3 class="content-title">Gift of Cow</h3>
+        <p class="content-text"><a href="Gallery/Gift of Cow/Gift of Cow.html">» See pictures!</a></p>
+      </div>
+  </div>
+</div>
+		  
+	  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <div class="content-overlay"></div>
+      <img class="content-image img-fluid" src="Gallery/Uniform Collection and Distribution/Pencil Distribution (2010)/34.jpg" alt="Uniform and Pencil Collection">
+      <div class="content-details fadeIn-bottom" alt=" ">
+        <h3 class="content-title">Uniform & Pencil Collection</h3>
+        <p class="content-text"><a href="Gallery/Gift of Cow/Uniform and Pencil Collection.html">» See pictures!</a></p>
+      </div>
+  </div>
+</div>
+		  
+	  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <div class="content-overlay"></div>
+      <img class="content-image img-fluid" src="Gallery/Finesse FZ/3.jpg" alt="Finesse FZ">
+      <div class="content-details fadeIn-bottom" alt=" ">
+        <h3 class="content-title">Finesse FZ</h3>
+        <p class="content-text"><a href="Gallery/Gift of Cow/Finesse FZ.html">» See pictures!</a></p>
+      </div>
+  </div>
+</div>
+		  
+</div>
+	</div>	
+	  	  <!-- Footer -->
+       <br>
+<div class="row" style="width: 100%;">
+          <div class="text-center col-lg-12 bg-light">
+             <span class="text-link">Copyright &copy; 2018 &middot; All Rights Reserved &middot; <a href="Homepage.html" >Education4All</a></span>
+			  	<center><img src="#" alt="Cheeeeeeese!" style="width: 250px;"></center>
+			  <center class="lead" style="font-size: 10px;"> Made with ♥ from MAHCE Business Solutions</center>
+          </div>
+		   </div>
+	  
+	  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.0.0.js"></script>
+  </body>
+</html>

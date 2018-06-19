@@ -1,0 +1,734 @@
+<!DOCTYPE  html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Education4ll</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+    <link href="Bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Merriweather|Open+Sans|Playfair+Display|Slabo+27px" rel="stylesheet">
+	  
+	  <style>
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal1-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+		  
+.modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal2-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+	  
+.modal3 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal3-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal4 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal4-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal5 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal5-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+		  
+		  
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+		  
+		  /* The Close Button */
+.close1 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+		  
+.close2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close2:hover,
+.close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+		  
+		  		  /* The Close Button */
+.close3 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close3:hover,
+.close3:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+		  
+		  		  		  /* The Close Button */
+.close4 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close4:hover,
+.close4:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+		  
+		  		  		  		  /* The Close Button */
+.close5 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close5:hover,
+.close5:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+			
+			
+	  
+	  
+	  
+	  
+  </head>
+	
+	
+  <body>
+/*
+	  <nav class="navbar navbar-xs bg-light">
+	  <div align="left" style="font-size: 9px;"> Contact us: +971 50 656 8549 | <a href="mailto::contact@edu4ll.com">contact@edu4ll.com</a>
+	  </div>
+	  <div align="right" style="padding: inherit; font-size: 9px;" class="col-md col-md-offset-8">
+		  Follow us on: <a href="#"><img src="icons/facebook follow.png" style="width:24px;" alt="Follow us on Facebook!"></a>
+	  </div>
+	  </nav>
+*/
+	  
+  <nav class="navbar navbar-expand-md bg-transparent">
+		<a href="Homepage.html"><img src="icons/Pencil Logo [Updated].png" style="width:160px;" alt="Our Logo"></a>
+
+       <div class="collapse navbar-collapse align-content-sm-end offset-6" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#">Our Partners</a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+             </li>			  
+             <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Media
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="#">Gallery</a>
+                   <a class="dropdown-item" href="#">Events</a>
+                </div>
+             <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us!</a>
+             </li>					 
+             </li>
+          </ul>
+             <a href="#"><button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Donate!</button></a>
+       </div>
+    </nav>
+
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner" style="padding-top: 20px">
+    <div class="carousel-item active">		
+	<center><img src="Photos/Facebook/F1.jpg" alt="Picture 1"></center>
+		
+    </div>
+    <div class="carousel-item">
+      <center><img src="Photos\Facebook\F2.jpg" alt="Picture 2"></center>
+    </div>
+    <div class="carousel-item">
+      <center><img src="Photos/Facebook/F3.jpg" alt="Picture 3"></center>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>																			   
+																			   
+       <br>
+       <hr>
+       <br>
+
+	  
+	  <!-- Who Are We? -->
+  <div class="row bg-light"><div class="col-xl-5 offset-1"><br><h1 class="display-25" style="font-family: 'Merriweather', serif;">It started with a pencil.<br>To make a point.</h1>
+   <br>
+   <span class="lead">Here at Education4All, we strongly believe that education isn't a privilege, it's a birthright. Although we're headquartered in Dubai, we'd like to think of ourselves as global. We've helped support hundreds of children in India receive an education and hope to expand to spread your love and care.</span><br><br><br>
+      <a class="btn btn-primary btn-lg" href="#contact" role="button">Support Us</a><br><br>
+</div>
+	  <div align="right" class="col-xl-5"><img alt="Our Mascot" src="Illustrations/Pencil Man.png" style="width: 200px;"></div>
+	</div>
+	  
+          
+	  <!-- What do we do? -->
+	<br>
+   <h1 class="display-340 text-center" style="font-family: 'Merriweather', serif;">What do we do?</h1>
+		  <br><br><br>	  
+    <div class="row offset-1">
+	        <div class="col-xl-4">
+				
+		<div class="card" style="width: 18rem;">
+		  <center><img class="card-img-top" src="icons/cow.png" alt="Gift of Cow"></center><br><br>
+ 
+			
+			<!-- Trigger/Open The Modal -->
+<center><button id="myBtn" class="btn btn-outline-primary my-2 my-sm-0">&raquo; Gift of Cow</button></center><br>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>In February 2010, we were in Arasaravankadu, Thiruvavur, Tamil Nadu India with a partner Raghavan, a Chartered Accountant, who runs a free school with 180 children. Apart from giving free education, the school gives milk with healthy cereals (KANJI) everyday for free. In the course of our discussion, he said that Shikshayatan buys milk partly from the market and from the family who maintains Shikshayatan's  cow. A family in the village maintains the cow and gives milk at a subsidised rate to the school.</p>
+  </div>
+</div></div>
+				
+				
+		</div>
+		
+	        <div class="col-xl-4">
+		
+		   <div class="card" style="width: 18rem;">
+  <center><img class="card-img-top" src="icons/uniform.png" alt="Uniform Collection"></center><br><br>
+
+   <center><button class="btn btn-outline-info my-2 my-sm-0" id="myBtn1">&raquo; Uniform Collection</button></center><br>
+			   
+			   <div id="myModal1" class="modal1">
+			   
+	<div class="modal1-content">
+			   <span class="close1">&times;</span>
+	<p> In 2013 and 2014, Education4All, a Venkat's initiative, distributed uniforms to over 7500 under-privileged children in 15 states of India: Tamil Nadu, Maharashtra, Karnataka, Andhra Pradesh, Telangana, Goa, Kerala, Orissa, Delhi, Uttarakand, Punjab, Haryana, West Bengal, Gujarat, and Rajasthan.</p>		   
+			   
+	</div>
+			   </div></div>
+				
+				
+		</div>
+		
+	        <div class="col-xl-4">
+		
+		<div class="card" style="width: 18rem;">
+  <center><img class="card-img-top" src="icons/books.ico" alt="Book Collection"></center><br><br>
+
+   <center><button class="btn btn-outline-secondary my-2 my-sm-0" id="myBtn2">&raquo; Book Collection</button></center><br>
+			
+			<div id="myModal2" class="modal2">
+				<div class="modal2-content">
+				 <span class="close2">&times;</span>
+	<p> We also collect books of all sorts: textbooks as well as novels. Kindergarten books are used by children for handwriting. Other school texts and novels are being prescribed to the children to broaden their understanding of the English language and grammatical syntax.</p>	
+  </div></div>
+		
+		</div>
+	  </div>
+	</div>
+		<br><br><br>
+	<div class="row offset-1">
+	        <div class="col-xl-4">
+				
+		<div class="card" style="width: 18rem;">
+		  <center><img class="card-img-top" src="icons/stationery.png" alt="Stationery Drives"></center><br><br>
+
+   <center><button class="btn btn-outline-warning my-2 my-sm-0" id="myBtn3">&raquo; Stationery Drives</button></center><br>
+			<div id="myModal3" class="modal3">
+				<div class="modal3-content">
+				<span class="close3">&times;</span>
+			<p> With our founder, Venkatraman, dubbed the Pencil-Man of Dubai, it is no surprise that we conduct stationery drives every year to help spark the minds of children in rural India. As of October 2015, we have collected over 300,000 stationery items and have distributed them to over 25,000 under-privileged children in 15 states in India.</p>
+				</div></div>
+		
+		</div>
+		</div>
+	        <div class="col-xl-4">
+		
+		   <div class="card" style="width: 18rem;">
+  <center><img class="card-img-top" src="icons/samarpan.png" alt="Samarpan" style="width: 200px;"></center><br><br>
+
+   <center><button class="btn btn-outline-danger my-2 my-sm-0" id="myBtn4">&raquo; Samarpan</button></center><br>
+			   <div id="myModal4" class="modal4">
+			   <div class="modal4-content">
+			     <span class="close4">&times;</span>
+			     <p> May 2012 saw Education4All organize a concert to raise stationery for the under-privileged. No sponsors were solicited and entry was strictly not cash-based: instead, we accepted stationery. We worked in conjunction with the Consulate General of India in Dubai, and we hope to organize more such concerts in the future.</p>
+			   </div>
+  </div></div>
+				
+		</div>
+	        <div class="col-xl-4">
+		
+		<div class="card" style="width: 18rem;">
+			<center><img class="card-img-top" src="icons/school.png" alt="" style="width: 220px;"></center><br><br>
+
+   <center><button class="btn btn-outline-dark my-2 my-sm-0" id="myBtn5">&raquo; Purna Shiksha</button></center><br>
+			<div id="myModal5" class="modal5">
+				<div class="modal5-content">
+				<span class="close5">&times;</span>
+					<p> Infrastructure is everything. Through our capstone Purna Shiksha initiative, we aim to provide schools in rural India with better infrastructure like trash cans, teacher training and water filters. Over 3,000 children have received the benefits of this program so far.</p>
+				</div>
+  </div></div>
+		
+		</div>
+  </div>		
+<!-- ============================================================================================= -->	  
+	          
+       <br/>
+       <br/>
+	
+	  
+	  <!-- Support Us! -->
+      <div class="container-fluid" style="background-image: url(Photos/cover-donate.jpg); background-size: cover;">
+		  <br><br><br><br><br>
+	  <a class="btn btn-primary btn-lg" href="#" role="button" style="position: relative; left: 45%; top: 45%;">Support Us</a>
+		  <br><br><br><br><br>
+	  </div>
+	  <!-- ================================================================================ -->
+	  <br><br><br><br>
+	  <!-- Our Partners -->
+	  <div class="container-fluid bg-light" align="center"><br>
+	  <h1 class="display-340 text-center" style="font-family: 'Merriweather', serif;">Our Partners</h1>
+		  <br><br><br>	  
+		  <div class="container">
+		  <div class="row" align="center">
+		  <div class="col-xl-2">
+		
+		
+			<center><img class="img-fluid" src="icons/sponsors/Engage Dubai.png" alt="ENGAGE Dubai"></center>
+  
+			  </div>
+		
+			 <div class="col-xl-2" style="">
+		
+			<center><img class="img-fluid offset-2" src="icons/sponsors/mahcelogo.png" alt="MAHCE Dubai"></center>
+			</div>
+			  
+			  <div class="col-xl-2" align="justify">
+		
+			<center><img class="img-fluid offset-3" src="icons/sponsors/Finesse FZ.png" alt="FINESSE Foundation"></center>
+			</div>
+			  
+			  <div class="col-xl-2">
+		
+			<center><img class="img-fluid offset-3" src="icons/sponsors/Polar Line.png" alt="Polar Line Cargo"></center>
+			</div>
+			  
+			  <div class="col-xl-2">
+		
+			<center><img class="img-fluid offset-3" src="icons/sponsors/homecentre.png" alt="Home Centre"></center>
+			</div>			  
+			  </div>
+		  </div><br>	 
+		  </div>
+		  <br><br>
+	  
+	  <!-- Feedback Form -->
+	  <div class="container-fluid" style="background-color: bisqueurl(#); background-size: cover;">
+	  <br>
+	  <h1 class="display-340 text-center" style="font-family: 'Merriweather', serif;"><a name="contact">Contact Us:</a></h1>
+		  <br><br>
+		  
+		  <div class="row">
+<form class="form-horizontal col-xl-6" action="/action_page.php">
+		  
+  <div class="form-group col-xl-12">
+	  <label class="control-label col-xl-2" for="name">Name:</label>
+    <div class="col-xl-12">
+      <input type="name" class="form-control" id="name" placeholder="Enter name">
+	  </div>
+  </div>
+		  
+  <div class="form-group col-xl-12">
+    <label class="control-label col-xl-2" for="number">Email:</label>
+    <div class="col-xl-12"> 
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+  </div>
+		  
+<div class="form-group col-xl-12">
+    <label class="control-label col-xl-2" for="pwd">Phone:</label>
+    <div class="col-xl-12"> 
+      <input type="number" class="form-control" id="phone" placeholder="Enter phone number">
+    </div>
+  </div>
+		  
+		  <div class="form-group col-xl-12">
+    
+<div class="dropdown">
+  <span>I'd like to be a: &nbsp;&nbsp;</span><button class="dropdown-toggle" type="button" data-toggle="dropdown"></button>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="#">Volunteer</a>
+                   <a class="dropdown-item" href="#">Donor</a>
+					<a class="dropdown-item" href="#">Sponsor</a>
+					<a class="dropdown-item" href="#">Other</a>
+                </div>
+</div>
+  </div>
+
+  <div class="form-group col-xl-12"> 
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+</form>
+<br>
+		  
+<div class="col-xl-6" align="right">
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBw9jvtGvRJmJCYKcPldNhdjqY9NqPbcI4"></script>
+<div style="overflow:hidden;height:432px;width:523px;"><div id="gmap_canvas" style="height:432px;width:523px; object-position: right;"></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href="https://embed-map.org/">google maps iframe embed</a> <script type="text/javascript" src="https://embedmaps.com/google-maps-authorization/script.js?id=7225ee816c1739a70464b73d8f8352eddfac76cf"></script><script type="text/javascript">function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(25.247784,55.300561000000016),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(25.247784,55.300561000000016)});infowindow = new google.maps.InfoWindow({content:"<strong>Education4All</strong><br>B 220 Al Attar Centre، Trade Centre Roundabout، Sheikh Khalifa Bin Zayed Street<br>112136 Dubai<br>"});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script></div></div>
+	  </div>
+
+<!-- Footer -->
+       <br>
+       <div class="row">
+          <div class="text-center col-lg-12 bg-light">
+             <span class="text-link">Copyright &copy; 2018 &middot; All Rights Reserved &middot; <a href="Homepage.html" >Education4All</a></span>
+          </div>
+       </div>
+	  
+	  
+<!----------------------------------------------------------------------------------------------------------------------->	
+
+  <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+
+<!--------------------------------------------------------------------------------------------------------------------------------->
+	
+	// Get the modal
+	
+var modal1 = document.getElementById('myModal1');
+	  
+	  
+// Get the button that opens the modal
+var btn1 = document.getElementById("myBtn1");
+
+// Get the <span> element that closes the modal
+var span1 = document.getElementsByClassName("close1")[0];
+
+// When the user clicks on the button, open the modal 
+btn1.onclick = function() {
+    modal1.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span1.onclick = function() {
+    modal1.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+	
+	// Get the modal
+var modal2 = document.getElementById('myModal2');
+
+// Get the button that opens the modal
+var btn2 = document.getElementById("myBtn2");
+
+// Get the <span> element that closes the modal
+var span2 = document.getElementsByClassName("close2")[0];
+
+// When the user clicks on the button, open the modal 
+btn2.onclick = function() {
+    modal2.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+    modal2.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+
+<!---------------------------------------------------------------------------------------------------------------------------->
+	
+	var modal3 = document.getElementById('myModal3');
+
+// Get the button that opens the modal
+var btn3 = document.getElementById("myBtn3");
+
+// Get the <span> element that closes the modal
+var span3 = document.getElementsByClassName("close3")[0];
+
+// When the user clicks on the button, open the modal 
+btn3.onclick = function() {
+    modal3.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span3.onclick = function() {
+    modal3.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+
+<!-------------------------------------------------------------------------------------------------------------------------->
+
+var modal4 = document.getElementById('myModal4');
+
+// Get the button that opens the modal
+var btn4 = document.getElementById("myBtn4");
+
+// Get the <span> element that closes the modal
+var span4 = document.getElementsByClassName("close4")[0];
+
+// When the user clicks on the button, open the modal 
+btn4.onclick = function() {
+    modal4.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span4.onclick = function() {
+    modal4.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+
+<!------------------------------------------------------------------------------------------------------------------------->
+	
+	var modal5 = document.getElementById('myModal5');
+
+// Get the button that opens the modal
+var btn5 = document.getElementById("myBtn5");
+
+// Get the <span> element that closes the modal
+var span5 = document.getElementsByClassName("close5")[0];
+
+// When the user clicks on the button, open the modal 
+btn5.onclick = function() {
+    modal5.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span5.onclick = function() {
+    modal5.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal5) {
+        modal5.style.display = "none";
+    }
+	else if (event.target == modal4) {
+        modal4.style.display = "none";
+    }
+	
+	else if (event.target == modal3) {
+        modal3.style.display = "none";
+    }
+	
+	else if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+	
+	else if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+	
+	else if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+  <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.0.0.js"></script>
+  </body>
+</html>

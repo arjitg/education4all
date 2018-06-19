@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery | Samarpan</title>
+
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap-4.0.0.css" rel="stylesheet">
+    <link href="../../Bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+	  	  	  <link rel="shortcut icon" href="../../icons/Education4All Favicon (2).png" type="image/x-icon">
+<link rel="icon" href="../../icons/Education4All Favicon (2).png" type="image/x-icon">
+  
+	<style>
+	  /* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 760px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+	  </style>	
+
+	</head>
+	
+	
+  <body>
+   <div style="height: 90%;">
+		  <nav class="navbar navbar-expand-md bg-transparent" style="position: absolute; z-index: 1; width: 100%;">
+		<a href="../../Homepage.html"><img src="../../icons/Pencil Logo [Updated].png" style="width:160px;" alt="Our Logo"></a>
+
+       <div class="collapse navbar-collapse align-content-sm-end offset-xl-6 offset-ms-3 offset-sm-1" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+                <a class="nav-link" href="../../Homepage.html" style="color: black;">Home <span class="sr-only">(current)</span></a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="../../Our Partners.html" style="color: black;">Our Partners</a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#" style="color: black;">News</a>
+             </li>			  
+		     <li class="nav-item">
+                <a class="nav-link" href="../../Gallery.html" style="color: black;">Gallery</a>
+             </li>
+          </ul>
+             <a href="../../Homepage.html#contact"><button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Support!</button></a>
+       </div>
+</nav>
+		  
+	  <img class="img-fluid" alt="Placeholder" src="../../Illustrations/Placeholder.png" style="position: relative; background-size: auto; pointer-events: none">
+	  </div>
+
+   <div class="container-fluid">
+		  <div class="row" style="width: 100%;">
+	    	  
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(1)" src="1.jpg" alt="Samarpan">
+      </div>
+  </div>  
+	  	  
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(2)" src="2.jpg" alt="Samarpan">
+      </div>
+  </div>  
+	 
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(3)" src="3.jpg" alt="Samarpan">
+      </div>
+  </div>  
+
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(4)" src="4.jpg" alt="Samarpan">
+      </div>
+  </div>  
+
+	    	  
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(5)" src="5.jpg" alt="Samarpan">
+      </div>
+  </div>  
+	  	  
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(6)" src="6.jpg" alt="Samarpan">
+      </div>
+  </div>  
+	 
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(7)" src="7.jpg" alt="Samarpan">
+      </div>
+  </div>  
+
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(8)" src="8.jpg" alt="Samarpan">
+      </div>
+  </div>  
+ 
+	    	  
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(9)" src="9.jpg" alt="Samarpan">
+      </div>
+  </div>  
+	  	  
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(10)" src="10.jpg" alt="Samarpan">
+      </div>
+  </div>  
+	 
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(11)" src="11.jpg" alt="Samarpan">
+      </div>
+  </div>  
+
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(12)" src="12.jpg" alt="Samarpan">
+      </div>
+  </div>  
+
+	    	  
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(13)" src="13.jpg" alt="Samarpan">
+      </div>
+  </div>  
+	  	  
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(14)" src="14.jpg" alt="Samarpan">
+      </div>
+  </div>  
+	 
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(15)" src="15.jpg" alt="Samarpan">
+      </div>
+  </div>  
+
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(16)" src="16.jpg" alt="Samarpan">
+      </div>
+  </div>  
+			   
+	    	  
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(17)" src="17.jpg" alt="Samarpan">
+      </div>
+  </div>  
+	  	  
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(18)" src="18.jpg" alt="Samarpan">
+      </div>
+  </div>  
+	 
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(19)" src="19.jpg" alt="Samarpan">
+      </div>
+  </div>  
+
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(20)" src="20.jpg" alt="Samarpan">
+      </div>
+  </div>  
+
+	    	  
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(21)" src="21.jpg" alt="Samarpan">
+      </div>
+  </div>  
+	  	  
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(22)" src="22.jpg" alt="Samarpan">
+      </div>
+  </div>  
+	 
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(23)" src="23.jpg" alt="Samarpan">
+      </div>
+  </div>  
+
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(24)" src="24.jpg" alt="Samarpan">
+      </div>
+  </div>  
+			   
+	    	  
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(25)" src="25.jpg" alt="Samarpan">
+      </div>
+  </div>  
+	  	  
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(26)" src="26.jpg" alt="Samarpan">
+      </div>
+  </div>  
+	 
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(27)" src="27.jpg" alt="Samarpan">
+      </div>
+  </div>  
+
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(28)" src="28.jpg" alt="Samarpan">
+      </div>
+  </div>  
+
+	    	  
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(29)" src="29.jpg" alt="Samarpan">
+      </div>
+  </div>  
+	  	  
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(30)" src="30.jpg" alt="Samarpan">
+      </div>
+  </div>  
+	 
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(31)" src="31.jpg" alt="Samarpan">
+      </div>
+  </div>  
+
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(32)" src="32.jpg" alt="Samarpan">
+      </div>
+  </div>  
+			   
+	    	  
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(33)" src="33.jpg" alt="Samarpan">
+      </div>
+  </div>  
+	  	  
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(34)" src="34.jpg" alt="Samarpan">
+      </div>
+  </div>  
+	 
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(35)" src="35.jpg" alt="Home Centre">
+      </div>
+  </div>  
+
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(36)" src="36.jpg" alt="Home Centre">
+      </div>
+  </div>  
+
+	    	  
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(37)" src="37.jpg" alt="Samarpan">
+      </div>
+  </div>  
+	  	  
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(38)" src="38.jpg" alt="Samarpan">
+      </div>
+  </div>  
+	 
+		  <div class="col-lg-3 col-md-4 col-sm-6 container">
+  <div class="col-lg-3 col-md-4 col-sm-6 content">
+      <img class="content-image img-fluid" onclick="openModal();currentSlide(39)" src="39.jpg" alt="Samarpan">
+      </div>
+  </div>  
+
+	  </div> 
+	  </div>
+	  
+	  <center><a href="../../Gallery.html"><button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Back to Gallery</button></a></center>
+	  
+	      	  	  <!-- Footer -->
+       <br>
+<div class="row" style="width: 100%;">
+          <div class="text-center col-lg-12 bg-light">
+             <span class="text-link">Copyright &copy; 2018 &middot; All Rights Reserved &middot; <a href="Homepage.html" >Education4All</a></span>
+			  	<center><img src="#" alt="Finishing GIF" style="width: 250px;"></center>
+			  <center class="lead" style="font-size: 10px;"> Made with ♥ from MAHCE Business Solutions</center>
+          </div>
+		   </div>
+	  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="../../js/popper.min.js"></script>
+    <script src="../../js/bootstrap-4.0.0.js"></script>
+  
+	<script>
+// Open the Modal
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+	
+	</body>
+</html>
