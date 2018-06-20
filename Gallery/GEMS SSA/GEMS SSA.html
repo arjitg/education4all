@@ -11,10 +11,124 @@
     <!-- Bootstrap -->
     <link href="../../css/bootstrap-4.0.0.css" rel="stylesheet">
     <link href="../../Bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
-  </head>
+  
+	
+<style>
+	  /* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 760px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+	  </style>
+	
+	</head>
 	
 	
- <body>
+  <body>
    <div style="height: 90%;">
 		  <nav class="navbar navbar-expand-md bg-transparent" style="position: absolute; z-index: 1; width: 100%;">
 		<a href="../../Homepage.html"><img src="../../icons/Pencil Logo [Updated].png" style="width:160px;" alt="Our Logo"></a>
@@ -44,300 +158,277 @@
    <div class="container-fluid">
 		  <div class="row" style="width: 100%;">
 	    	  
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	  	  
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	 
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
+		  <div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(1)" src="1.jpg" alt="GEMS SSA"></div></div>  
 
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	  </div>  
-		  
-		   <div class="row" style="width: 100%;">
-	    	  
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	  	  
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	 
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
 
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-			   
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(2)" src="2.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(3)" src="3.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(4)" src="4.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(5)" src="5.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(6)" src="6.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(7)" src="7.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(8)" src="8.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(9)" src="9.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(10)" src="10.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(11)" src="11.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(12)" src="12.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(13)" src="13.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(14)" src="14.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(15)" src="15.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(16)" src="16.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(17)" src="17.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(18)" src="18.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(19)" src="19.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(20)" src="20.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(21)" src="21.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(22)" src="22.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(23)" src="23.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(24)" src="24.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(25)" src="25.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(26)" src="26.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(27)" src="27.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(28)" src="28.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(29)" src="29.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(30)" src="30.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(31)" src="31.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(32)" src="32.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(33)" src="33.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(34)" src="34.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(35)" src="35.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(36)" src="36.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(37)" src="37.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(38)" src="38.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(39)" src="39.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(40)" src="40.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(41)" src="41.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(42)" src="42.jpg" alt="GEMS SSA"></div></div>  
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 container"> <div class="col-lg-3 col-md-4 col-sm-6 content">      <img class="content-image img-fluid" onclick="openModal();currentSlide(43)" src="43.jpg" alt="GEMS SSA"></div></div>  
+
 	  </div>  
 	   
-	   		  <div class="row" style="width: 100%;">
-	    	  
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	  	  
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	 
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	  </div>  
-		  
-		   <div class="row" style="width: 100%;">
-	    	  
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	  	  
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	 
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-			   
-	  </div> 
+	   <!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
 	   
-	   		  <div class="row" style="width: 100%;">
-	    	  
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	  	  
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	 
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
+	   <div class="mySlides"><div class="numbertext">1/43</div><img src="1.jpg" style="width: 100%;" alt="GEMS SSA"></div>
 
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	  </div>  
-		  
-		   <div class="row" style="width: 100%;">
-	    	  
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	  	  
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	 
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
 
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-			   
+<div class="mySlides"><div class="numbertext">2/43</div><img src="2.jpg" style="width: 100%;" alt="GEMS SSA"></div>
 
-	  </div> 
-	   
-	   		  <div class="row" style="width: 100%;">
-	    	  
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	  	  
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	 
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
 
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	  </div>  
-		  
-		   <div class="row" style="width: 100%;">
-	    	  
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	  	  
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	 
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
+<div class="mySlides"><div class="numbertext">3/43</div><img src="3.jpg" style="width: 100%;" alt="GEMS SSA"></div>
 
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-			   
-	  </div> 
-	   
-	   		  <div class="row" style="width: 100%;">
-	    	  
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	  	  
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	 
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
 
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	  </div>  
-	   
-	   	   		  <div class="row" style="width: 100%;">
-	    	  
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	  	  
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	 
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
+<div class="mySlides"><div class="numbertext">4/43</div><img src="4.jpg" style="width: 100%;" alt="GEMS SSA"></div>
 
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	  </div>  
-	   
-	   	   		  <div class="row" style="width: 100%;">
-	    	  
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	  	  
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
-	 
-		  <div class="col-lg-3 col-md-4 col-sm-6 container">
-  <div class="col-lg-3 col-md-4 col-sm-6 content">
-      <img class="content-image img-fluid" src="../../Illustrations/Placeholder Gallery Thumbnail.png" alt="Home Centre">
-      </div>
-  </div>  
 
-	  </div>  
+<div class="mySlides"><div class="numbertext">5/43</div><img src="5.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">6/43</div><img src="6.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">7/43</div><img src="7.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">8/43</div><img src="8.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">9/43</div><img src="9.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">10/43</div><img src="10.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">11/43</div><img src="11.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">12/43</div><img src="12.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">13/43</div><img src="13.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">14/43</div><img src="14.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">15/43</div><img src="15.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">16/43</div><img src="16.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">17/43</div><img src="17.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">18/43</div><img src="18.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">19/43</div><img src="19.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">20/43</div><img src="20.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">21/43</div><img src="21.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">22/43</div><img src="22.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">23/43</div><img src="23.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">24/43</div><img src="24.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">25/43</div><img src="25.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">26/43</div><img src="26.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">27/43</div><img src="27.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">28/43</div><img src="28.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">29/43</div><img src="29.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">30/43</div><img src="30.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">31/43</div><img src="31.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">32/43</div><img src="32.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">33/43</div><img src="33.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">34/43</div><img src="34.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">35/43</div><img src="35.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">36/43</div><img src="36.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">37/43</div><img src="37.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">38/43</div><img src="38.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">39/43</div><img src="39.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">40/43</div><img src="40.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">41/43</div><img src="41.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">42/43</div><img src="42.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+
+<div class="mySlides"><div class="numbertext">43/43</div><img src="43.jpg" style="width: 100%;" alt="GEMS SSA"></div>
+
+	      <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+</div> 
+	  
+	  
 	 </div>
 	 
 	   <center><a href="../../Gallery.html"><button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Back to Gallery</button></a></center>
@@ -359,5 +450,49 @@
     <!-- Include all compiled plugins (below), or include individual files as needed --> 
     <script src="../../js/popper.min.js"></script>
     <script src="../../js/bootstrap-4.0.0.js"></script>
-  </body>
+  
+	<script>
+// Open the Modal
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+	
+	</body>
 </html>
