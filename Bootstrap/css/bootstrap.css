@@ -9521,11 +9521,11 @@ a.text-dark:hover, a.text-dark:focus {
 	font-size: 375%;
 	position: absolute;
   margin-top:1em;
-  margin-bottom:1em;
-	/*padding-top: 10vh;*/
+  /*margin-bottom:1em;
+	padding-top: 10vh;*/
   border: 3px solid green; 
 	left: 52.4vw;
-	top: 12 px;
+	top: 1 px;
 	line-height: auto;
 	
 }
