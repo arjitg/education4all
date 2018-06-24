@@ -4345,6 +4345,7 @@ input[type="button"].btn-block {
   position: relative;
   display: -ms-flexbox;
   display: flex;
+  box-shadow: 5px 10px #AAAAAA;
   -ms-flex-direction: column;
   flex-direction: column;
   min-width: 0;
@@ -4352,7 +4353,6 @@ input[type="button"].btn-block {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
 }
 
 .card > hr {
@@ -9520,10 +9520,24 @@ a.text-dark:hover, a.text-dark:focus {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 375%;
 	position: absolute;
-	left: 53.5%;
-	top: 33%;
-	color: black;
+  margin-top:1em;
+  margin-bottom:1em;
+	/*padding-top: 10vh;*/
+  border: 3px solid green; 
+	left: 52.4vw;
+	top: 12 px;
 	line-height: auto;
+	
+}
+/* A class for mobile version
+.opqn-mob{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 375%;
+	position: absolute;
+	padding-top: 10vw; 
+	left: 15vw;
+	top: 35vw;
+	color: black;
 }
 
 .landingsee {
