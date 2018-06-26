@@ -9522,10 +9522,9 @@ a.text-dark:hover, a.text-dark:focus {
 	position: absolute;
   margin-top:1em;
   /*margin-bottom:1em;
-	padding-top: 10vh;*/
-  border: 3px solid green; 
+	padding-top: 10vh;*/ 
 	left: 52.4vw;
-	top: 1 px;
+	top: 3.2em;
 	line-height: auto;
 	
 }

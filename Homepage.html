@@ -1,6 +1,15 @@
 <!DOCTYPE  html>
 <html lang="en">
   <head>
+
+  	<!--BOOTSNIPP-->
+  	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,11 +18,17 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
     <link href="Bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="Bootstrap/css/news_scroll.css" rel="stylesheet" type="text/css">
+    <link href="Bootstrap/css/movingnews.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Merriweather|Open+Sans:800|Playfair+Display|Slabo+27px" rel="stylesheet">
 	  	  <link rel="shortcut icon" href="icons/Education4All Favicon (2).png" type="image/x-icon">
 <link rel="icon" href="icons/Education4All Favicon (2).png" type="image/x-icon">
 	  
-	  <style>
+<style>
+
+/*News css*/
+
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -265,15 +280,115 @@
              <a href="Homepage.html#contact"><button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Support!</button></a>
        </div>
     </nav>
-<img class="img-fluid" alt="What's in a pencil?" src="Illustrations/Landing Page/Landing Illustration.png" style="position:relative; width: 100%; background-size: cover; pointer-events: none">
+<!--
+    <div class="opqn">
+		What's in a pencil?
+	</div>
+-->
+
+
+<div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+      
+        <div class="item active">
+          <img src="http://placehold.it/760x400/cccccc/ffffff">
+           <div class="carousel-caption">
+            <h4><a href="#">Lorem ipsum dolor sit amet consetetur sadipscing</a></h4>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. <a class="label label-primary" href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank">Free Bootstrap Carousel Collection</a></p>
+          </div>
+        </div><!-- End Item -->
+ 
+         <div class="carousel-item">
+          <img src="http://placehold.it/760x400/999999/cccccc">
+           <div class="carousel-caption">
+            <h4><a href="#">consetetur sadipscing elitr, sed diam nonumy eirmod</a></h4>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. <a class="label label-primary" href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank">Free Bootstrap Carousel Collection</a></p>
+          </div>
+        </div><!-- End Item -->
+        
+        <div class="carousel-item">
+          <img src="http://placehold.it/760x400/dddddd/333333">
+           <div class="carousel-caption">
+            <h4><a href="#">tempor invidunt ut labore et dolore</a></h4>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. <a class="label label-primary" href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank">Free Bootstrap Carousel Collection</a></p>
+          </div>
+        </div><!-- End Item -->
+        
+        <div class="carousel-item">
+          <img src="http://placehold.it/760x400/999999/cccccc">
+           <div class="carousel-caption">
+            <h4><a href="#">magna aliquyam erat, sed diam voluptua</a></h4>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. <a class="label label-primary" href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank">Free Bootstrap Carousel Collection</a></p>
+          </div>
+        </div><!-- End Item -->
+
+        <div class="carousel-item">
+          <img src="http://placehold.it/760x400/dddddd/333333">
+           <div class="carousel-caption">
+            <h4><a href="#">tempor invidunt ut labore et dolore magna aliquyam erat</a></h4>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. <a class="label label-primary" href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank">Free Bootstrap Carousel Collection</a></p>
+          </div>
+        </div><!-- End Item -->
+                
+      </div><!-- End Carousel Inner -->
+
+
+    <ul class="list-group col-sm-4">
+      <li data-target="#myCarousel" data-slide-to="0" class="list-group-item active"><h4>Lorem ipsum dolor sit amet consetetur sadipscing</h4></li>
+      <li data-target="#myCarousel" data-slide-to="1" class="list-group-item"><h4>consetetur sadipscing elitr, sed diam nonumy eirmod</h4></li>
+      <li data-target="#myCarousel" data-slide-to="2" class="list-group-item"><h4>tempor invidunt ut labore et dolore</h4></li>
+      <li data-target="#myCarousel" data-slide-to="3" class="list-group-item"><h4>magna aliquyam erat, sed diam voluptua</h4></li>
+      <li data-target="#myCarousel" data-slide-to="4" class="list-group-item"><h4>tempor invidunt ut labore et dolore magna aliquyam erat</h4></li>
+    </ul>
+
+      <!-- Controls -->
+      <div class="carousel-controls">
+          <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+      </div>
+
+    </div><!-- End Carousel -->
 </div>
 
+<<<<<<< HEAD
 	<div class="opqn">
 	 What's in a pencil?
 	</div>
+=======
+
+
+<!--original place
+<img class="img-fluid" alt="What's in a pencil?" src="Illustrations/Landing Page/Landing Illustration.png"
+>>>>>>> refs/remotes/origin/arjit-mod
 	
+	style="position:relative;
+	width: 100%;
+	background-size: 
+	cover; 
+	pointer-events: none">
+-->	
+
+</div>
+
+<!-- News scrolling
+<div id="news_iframe_scroll">
+	<div class="news_scroll-title">
+		News and Updates<br>
+	</div>
+	<iframe name="NewsIFrame" src="news_scroll.html" frameborder="0" scrolling="yes"></iframe>
+</div>
+-->
+<!--	
 	<p class="lead" style="position: absolute; top: 45.5%; left: 53.5%; color: black; width: 33%;"> No, we don't mean the lead. Or the graphite. Or the wood. Not the eraser, either. We mean the value, the principle, and what it stands for. What is a pencil worth to you?</p>
-<br>	  
+<br>
+-->	  
 	  <!-- Who Are We? -->
   <div class="row bg-light" style="width: 100%;"><div class="col-xl-5 offset-1"><br><h1 class="display-25" style="font-family: 'Merriweather', serif;">It started with a pencil.<br>To make a point.</h1>
    <br>
