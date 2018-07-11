@@ -11,12 +11,92 @@
     <link href="Bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
 	  	  <link rel="shortcut icon" href="icons/Education4All Favicon (2).png" type="image/x-icon">
 <link rel="icon" href="icons/Education4All Favicon (2).png" type="image/x-icon">
+	    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script type="text/javascript" src="https://fonts.googleapis.com/css?family=Open+Sans"></script> 
+	
+	
+	<style>
+	
+	.testimonials {
+  overflow: hidden;
+  position: relative;
+  max-height: auto;
+}
+
+.one-slide,
+.testimonial,
+.message {
+  border: none !important;
+  outline: none !important;
+}
+
+.icon-overlay {
+  position: absolute;
+  opacity: 0.3;
+  right: 10%;
+  top: 0;
+  height: auto;
+  width: 100%;
+  max-width: auto;
+}
+
+.carousel-controls .control {
+  position: absolute;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 2px solid #fff;
+  z-index: 1;
+}
+
+.prev {
+  left: -2.25rem;
+}
+
+.next {
+  right: -2.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonials {
+    max-height: auto;
+  }
+  .icon-overlay {
+    height: auto;
+    top: calc(50% - 150px);
+  }
+  .carousel-controls .control {
+    width: 25px;
+    height: 25px;
+    top: inherit;
+  }
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
+  .control i {
+    font-size: .7rem;
+  }
+  .testimonials .message {
+    font-size: 1rem;
+  }
+  .testimonials h2 {
+    font-size: 1.5rem;
+  }
+}
+	</style>
   </head>
 
 <body background="Illustrations/News/News Background.png" style="background-repeat: no-repeat;">
 <div>
 		  <nav class="navbar navbar-expand-md bg-transparent" style="position: absolute; z-index: 1; width: 100%;">
-		<a href="Homepage.html"><img src="icons/Logo Ideas/Negative Rounded Rectangle v5.0.png" style="width:60px;" alt="Our Logo"></a>
+		<a href="Homepage.html"><img src="icons/Logo Ideas/Negative Rounded Rectangle v5.0.png" style="width: 60px;" alt="Our Logo"></a>
 
        <div class="collapse navbar-collapse align-content-sm-end offset-xl-6 offset-ms-3 offset-sm-1" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
@@ -110,8 +190,8 @@
 	
 	
 	<!-- Testimonials Slider -->
-<section class="container-fluid testimonials bg-light text-center">
-  <div class="container">
+<section class="container-fluid testimonials bg-light text-center" style="padding-left: 10%; align-content: center" align="center">
+  <div class="container" align="center" style="align-items: center">
     <div class="row">
       <div class="col-sm-12">
         <h2 class="text-center font-weight-bold">What are people saying?</h2>
@@ -135,10 +215,28 @@
             </div>
             <div class="h5 font-weight-normal one-slide mx-auto">
               <div class="testimonial text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
-                <div class="message text-center blockquote">The distribution job undertaken by Mr. Venkat is laudable and appreciatable, as the challenges he faces is phenomenal. The distribution link is beautifully organised and I am happy to see all the items getting reached to the real needy.</div>
+                <div class="message text-center blockquote">"The distribution job undertaken by Mr. Venkat is laudable and appreciatable, as the challenges he faces is phenomenal. The distribution link is beautifully organised and I am happy to see all the items getting reached to the real needy."</div>
                 <div class="blockquote-footer">R. J. Vallabhan, The Westminster School, Dubai</div>
               </div>
             </div>
+			  <div class="h5 font-weight-normal one-slide mx-auto">
+              <div class="testimonial text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+                <div class="message text-center blockquote">"It is heartening that our fellow professional brethren doing such a wonderful social service. He is inspiration to many like me who wanted to do some community service. We all are proud of him. Our best wishes to him to get more and more recognition for his service to the society."</div>
+                <div class="blockquote-footer">S. Venkatesh, Former Chairman, ICAI Dubai</div>
+              </div>
+            </div>
+			  <div class="h5 font-weight-normal one-slide mx-auto">
+              <div class="testimonial text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+                <div class="message text-center blockquote">"We read  your services through one of magazine(FRIDAY) which publishing from UAE .  we are very much impressed of your innovative move towards the education.  The tool which you took is quite appreciable "tools for education" which is really required in this situation."</div>
+                <div class="blockquote-footer">Rangarajan Sampath, KSA</div>
+              </div>
+            </div>
+			  <div class="h5 font-weight-normal one-slide mx-auto">
+              <div class="testimonial text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+                <div class="message text-center blockquote">"Hearty congratulations! Hats off to you, for distributing the old, used uniforms to needy ones in a decent, dignified manner making both happy, donor as well as recipient. It has brought a lovely smile on each child’s face and tears in our eyes."</div>
+                <div class="blockquote-footer">Jyoti Avinash Jawharkar, OOEHS, Dubai</div>
+              </div>
+            </div>			  
           </div>
         </div>
       </div>
